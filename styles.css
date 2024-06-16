@@ -1,0 +1,129 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#navbar {
+    width: 100%;
+    background-color: #487dd7;
+    color: #6a11cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    z-index: 10;
+    font-weight: bolder;
+    
+}
+
+#logo {
+    text-align: center;
+    font-size: 1.5rem; 
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+   
+}
+
+#movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.movie {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-top: 5rem;
+}
+
+.movie img {
+    max-height: 18.75rem; 
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+
+
+.movie h2 {
+    font-size: 2rem;
+    color: black;
+}
+
+.movie p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#search-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(183, 167, 227);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 31.25rem; 
+    max-width: 100%;
+    margin-top: 10rem; 
+    position: relative; 
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#search input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: .60rem;
+    border-color: aliceblue;
+}
+
+#search button {
+    padding: 10px;
+    width: 100%;
+    background-color: #6a11cb;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#search button:hover {
+    background-color: #2575fc;
+}
+
+#error-container {
+    margin-top: 10px;
+    color: red;
+}
+
+
